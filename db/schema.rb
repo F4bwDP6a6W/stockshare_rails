@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150621051423) do
+ActiveRecord::Schema.define(version: 20150624153436) do
+
+# Could not dump table "sqlite_stat1" because of following NoMethodError
+#   undefined method `[]' for nil:NilClass
 
   create_table "stocks", force: true do |t|
     t.string   "stockNumber"
