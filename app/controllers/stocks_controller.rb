@@ -1,5 +1,7 @@
 class StocksController < ApplicationController
 
+  http_basic_authenticate_with name: "n2zhang", password: "Nokia127", except: [:index, :show]
+
   def index
     @stock = Stock.all
   end

@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   resources :stocks
+   resources :stocks do
+     resources :comments
+   end
    root 'stockview#index'
 
   # Example of regular route:

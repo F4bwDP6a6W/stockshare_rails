@@ -11,14 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150624153436) do
+ActiveRecord::Schema.define(version: 20150624153437) do
+
+  create_table "comments", force: :cascade do |t|
+    t.string   "commenter"
+    t.text     "body"
+    t.integer  "stock_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["stock_id"], name: "index_comments_on_stock_id"
 
 # Could not dump table "sqlite_stat1" because of following NoMethodError
 #   undefined method `[]' for nil:NilClass
 
-  create_table "stocks", force: true do |t|
-    t.string   "stockNumber"
-    t.string   "title"
+  create_table "stocks", force: :cascade do |t|
+    t.string   "stockNumber", limit: 255
+    t.string   "title",       limit: 255
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
