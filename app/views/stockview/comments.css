@@ -521,42 +521,37 @@ p {
 
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Black.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e120840b334664ee701b_ProximaNova-Black.otf') format('opentype');
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Regular.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e1211d98d66a65c02fe5_ProximaNova-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Semibold.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e121697ed345645edf13_ProximaNova-Semibold.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Extrabold.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e121840b334664ee701c_ProximaNova-Extrabold.otf') format('opentype');
     font-weight: 800;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Light.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e1211d98d66a65c02fe4_ProximaNova-Light.otf') format('opentype');
     font-weight: 200;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Proximanova';
-    src: url('../fonts/ProximaNova-Bold.otf') format('opentype');
+    src: url('https://daks2k3a4ib2z.cloudfront.net/5449de55840b334664ee6fec/5449e1201d98d66a65c02fe3_ProximaNova-Bold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
 }
@@ -583,11 +578,6 @@ p {
     content: " ";
     display: table;
 }
-
-.w-col-4 {
-    width: 33.33333333%;
-}
-
 .w-col {
     position: relative;
     float: left;
@@ -596,7 +586,10 @@ p {
     padding-left: 10px;
     padding-right: 10px;
 }
-
+.w-col-4 {
+    width: 33.33333333%;
+}
 * {
     box-sizing: border-box;
 }
+

@@ -1,3 +1,164 @@
-// Place all the styles related to the stocks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+div {
+  display: block;
+}
+.modal-dialog.absolute-position {
+}
+
+html.modal-open.flexbox .modal-wrapper .modal-dialog {
+  margin-right: 0;
+  margin-left: 0;
+}
+html.modal-open .modal-wrapper .modal-dialog {
+  position: static;
+  margin-top: 14%;
+  margin-top: 14vh;
+}
+.modal-dialog {
+  position: absolute;
+  z-index: 99;
+  margin: auto;
+  width: 420px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #888;
+  box-shadow: 0 0 80px 0 rgba(0,0,0,.4);
+  background: #fff;
+  text-align: left;
+}
+.modal-dialog, div[contentEditable] {
+  outline: 0;
+  -moz-outline: 0;
+}
+
+body.zhi {
+  padding-top: 46px;
+  _padding-top: 64px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+html body, html input, html textarea, html select, html button {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+body, input, textarea, select, button {
+  line-height: 1.7;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  color: #222;
+  word-wrap: break-word;
+}
+
+
+.modal-dialog-title {
+  position: relative;
+  background-color: #1575d5;
+  background-image: -moz-linear-gradient(top,#1d7fe2,#0865c2);
+  background-image: -ms-linear-gradient(top,#1d7fe2,#0865c2);
+  background-image: -webkit-gradient(linear,0 0,0 100%,from(#1d7fe2),to(#0865c2));
+  background-image: -webkit-linear-gradient(top,#1d7fe2,#0865c2);
+  background-image: -o-linear-gradient(top,#1d7fe2,#0865c2);
+  background-image: linear-gradient(top,#1d7fe2,#0865c2);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d7fe2', endColorstr='#0865c2', GradientType=0);
+  padding: 10px 15px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #0D6EB8;
+  box-shadow: 0 1px 0 rgba(255,255,255,.1) inset,0 1px 1px rgba(0,0,0,.2);
+  margin: -1px -1px 0;
+  line-height: 14px;
+}
+
+.zg-editor-input {
+  width: 100%;
+  font-weight: 400;
+  min-height: 66px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+.zu-seamless-input-origin-element {
+  overflow: hidden;
+}
+
+textarea {
+  border: 0;
+  border: 0;
+  -moz-outline: 0;
+  outline: 0;
+  overflow: auto;
+  resize: none;
+  -webkit-appearance: none;
+}
+#zh-question-suggest-detail-container .zm-editable-editor-field-wrap {
+  overflow-y: auto;
+  max-height: 192px;
+}
+.zm-editable-editor-wrap.no-toolbar .zm-editable-editor-field-wrap {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.zm-editable-editor-field-wrap {
+  position: relative;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 0 4px 0 rgba(0,0,0,.1) inset;
+  -webkit-transition: min-height .25s ease-out;
+  background: #fff;
+}
+
+div[contentEditable], input, textarea, button, a:link {
+  -webkit-tap-highlight-color: rgba(225,225,225,.5);
+}
+
+.zg-form-text-input {
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1) inset;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #222;
+}
+
+textarea.zg-form-text-input, .zg-form-text-input>textarea {
+  color: #222;
+  overflow: hidden;
+  min-height: 66px;
+  line-height: 22px;
+  font-size: 13px;
+  padding: 0!important;
+  margin: 0!important;
+  border: 0 none;
+}
+
+.tr-image {
+  background-position: -80px -127px;
+}
+.tr-inline-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.zh-add-question-form {
+  padding: 2px 2px 0;
+}
+
+.zh-add-question-form .add-question-title-form textarea {
+  vertical-align: bottom;
+  height: 22px;
+}
+
+.zh-add-question-form .add-question-section-title {
+  margin-bottom: 5px;
+}
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo, .icon-qzone, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-qq, .icon-big-white-mail, .icon-sign-arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url(sprites-1.9.2.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}

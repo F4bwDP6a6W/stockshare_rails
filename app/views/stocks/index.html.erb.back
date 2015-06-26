@@ -1,0 +1,24 @@
+<h1>Listing Stocks</h1>
+
+<%= link_to 'New stock', new_stock_path %>
+
+<table>
+  <tr>
+    <th>Stock Number</th>
+    <th>Title</th>
+    <th>Text</th>
+  </tr>
+
+  <% @stock.each do |stock| %>
+      <tr>
+        <td><%= stock.stockNumber %></td>
+        <td><%= stock.title %></td>
+        <td><%= stock.text %></td>
+        <td><%= link_to 'Show', stock_path(stock) %></td>
+        <td><%= link_to 'Edit', edit_stock_path(stock) %></td>
+        <td><%= link_to 'Destroy', stock_path(stock),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
