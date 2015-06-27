@@ -7,6 +7,7 @@
  > `gem install -p http://10.10.10.10:8080 rails`
  
 你需要有一个http的代理，这里的`10.10.10.10:8080`只是一个例子。
+
 Bundle install 设置代理在执行前先:
  > Windows:`SET http_proxy=http://10.10.10.10:8080`
  > Mac:`EXPORT http_proxy=http://10.10.10.10:8080`
@@ -19,12 +20,15 @@ Bundle install 设置代理在执行前先:
 * Configuration
 
 * Database creation
+
 Development环境执行:
  > `rake db:migrate`
+
 Production环境执行：
  > `rake db:migrate RAILS_ENV=production`
 
 * How to run the test suite
+
 Development环境执行：
  > `rails server`
 
