@@ -13,6 +13,7 @@
 
 Bundle install 设置代理在执行前先:
  > Windows:`SET http_proxy=http://10.10.10.10:8080`
+ 
  > Mac:`EXPORT http_proxy=http://10.10.10.10:8080`
 
 * Ruby version
