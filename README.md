@@ -2,6 +2,9 @@
 我是根据这个Guide先走了一遍，这个Guide的质量还是比较高。比较顺利。
  > [http://guides.rubyonrails.org/getting_started.html]
 
+注册，登陆用的这个Guide:
+ > [http://guides.railsgirls.com/devise/]
+
 在中国大陆因为有防火墙的原因所以Rails开始比较困难。
  > `gem install` 设置代理的命令如下：
  > `gem install -p http://10.10.10.10:8080 rails`
@@ -47,3 +50,4 @@ Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
 
 [http://guides.rubyonrails.org/getting_started.html]: http://guides.rubyonrails.org/getting_started.html
+[http://guides.railsgirls.com/devise/]: http://guides.railsgirls.com/devise/
