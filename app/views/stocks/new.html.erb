@@ -2,40 +2,43 @@
   <div class="modal-dialog absolute-position" tabindex="0" role="dialog" aria-labelledby=":2i" style="width: 550px;">
     <div class="modal-dialog-title"><span class="modal-dialog-title-text" id=":2i" role="heading">提问</span></div>
     <div class="modal-dialog-content">
-      <%= form_for :stock, url:stocks_path do |f| %>
-      <div class="zh-add-question-form">
-        <div class="before-ask-form"><b>提问前请先搜索</b>
-          <div style="position:relative;margin-top:18px;">
+      <%= form_for :stock, :url => stocks_path, :html => {:multipart => true} do |f| %>
+          <div class="zh-add-question-form">
+            <div class="before-ask-form"><b>提问前请先搜索</b>
+
+              <div style="position:relative;margin-top:18px;">
                 <%= f.label :stockNumber %><br>
                 <%= f.text_field :stockNumber %>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-        <div class="zg-section-big clearfix">
-          <div class="zg-form-text-input add-question-title-form" style="position: relative;">
-            <%= f.label :title %><br>
-            <%= f.text_field :title %>
+          <div class="zg-section-big clearfix">
+            <div style="position:relative;margin-top:18px;">
+              <%= f.label :title %><br>
+              <%= f.text_field :title %>
+            </div>
           </div>
-        </div>
-        <div class="zg-section-big">
-          <div class="add-question-section-title"><span class="zg-right extra-editor-toolbar hidden-phone">
-            <div class="js-editor-add-pic goog-inline-block goog-link-button" role="button" title="添加图片">
-              <i class="tr-inline-icon tr-image"></i></div></span><%= f.label :text %>
-            <span id="zh-question-form-detail-err"></span></div>
-          <div id="zh-question-suggest-detail-container" class="zm-editable-status-editing">
-            <div class="zm-editable-editor-wrap no-toolbar" style="">
+          <div class="zg-section-big">
+            <div style="position:relative;margin-top:18px;">
+                <%= f.file_field :avatar %>
+            </div>
+
+            <div class="zg-section-big">
+              <div style="position:relative;margin-top:18px;">
                 <div class="zm-editable-editor-field-wrap">
+                  <%= f.label :text %>
                   <%= f.text_area :text %>
                 </div>
               </div>
-              <div class="zm-command"><%= link_to 'Back', stocks_path %>
+              <div style="position:relative;margin-top:18px;">
+                <%= link_to 'Back', stocks_path %>
                 <%= f.submit %></div>
             </div>
           </div>
-        </div>
+          </div>
       <% end %>
-    </div>
-  </div>
-  <div class="modal-dialog-buttons" style="display: none;"></div>
+      </div>
+</div>
+<div class="modal-dialog-buttons" style="display: none;"></div>
 </div>
 </div>

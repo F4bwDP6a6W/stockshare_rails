@@ -1,0 +1,23 @@
+<p>
+  <strong>StockNumber:</strong>
+  <%= @stock.stockNumber %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @stock.title %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @stock.text %>
+</p>
+
+<h2>Comments</h2>
+<%= render @stock.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_stock_path(@stock) %> |
+<%= link_to 'Back', stocks_path %>

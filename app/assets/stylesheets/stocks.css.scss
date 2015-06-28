@@ -8,11 +8,7 @@ html.modal-open.flexbox .modal-wrapper .modal-dialog {
   margin-right: 0;
   margin-left: 0;
 }
-html.modal-open .modal-wrapper .modal-dialog {
-  position: static;
-  margin-top: 14%;
-  margin-top: 14vh;
-}
+
 .modal-dialog {
   position: absolute;
   z-index: 99;
@@ -48,6 +44,14 @@ body, input, textarea, select, button {
   word-wrap: break-word;
 }
 
+body {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
 
 .modal-dialog-title {
   position: relative;
@@ -81,7 +85,6 @@ body, input, textarea, select, button {
 }
 
 textarea {
-  border: 0;
   border: 0;
   -moz-outline: 0;
   outline: 0;
@@ -161,4 +164,48 @@ textarea.zg-form-text-input, .zg-form-text-input>textarea {
   background-repeat: no-repeat;
   display: inline-block;
   vertical-align: middle;
+}
+
+.sign-button {
+
+  margin-top: 0px;
+  margin-bottom: 7px;
+  margin-left: 23px;
+  display: inline-block;
+  width: 180px;
+  font-size: 15px;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  background: #75d175;
+  background: -webkit-gradient(linear,left top,left bottom,from(#4CB64C),to(#2C9A2C));
+  border: 1px solid #75d175;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.3),0 1px 1px rgba(50,50,50,.05);
+  outline: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.modal-dialog-title-text{
+  color:#fff;
+}
+
+.sign-flow .view {
+  display: inline-block;
+  float: left;
+  width: 202px;
+  margin: 38px 0;
+}
+
+.zu-top-nav-link {
+  width: 54px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  display: block;
+  color: #f2f4f5;
+  text-shadow: 0 1px 1px rgba(0,0,0,.12);
+  font-size: 14px;
 }

@@ -11,11 +11,10 @@
         <div>
             <div class="w-form form-wrap">
                 <form class="form" id="email-form" name="email-form" data-name="Email Form">
-                    <label class="email-label" for="email">Sign up</label>
                     <input class="w-input form-label" id="email" type="email" placeholder="Enter your email address"
                            name="email" data-name="Email" required="required">
-                    <input class="w-button subscribe-btn" type="submit" value="Email me!" data-wait="Please wait...">
-                    <%= link_to 'New stock', new_stock_path , {:class => 'w-button subscribe-btn'} %>
+                    <input class="sign-button" type="submit" value="Email me!" data-wait="Please wait...">
+                    <%= link_to '发布', new_stock_path , {:class => 'sign-button'} %>
                 </form>
                 <div class="w-form-fail">
                 </div>
@@ -33,7 +32,7 @@
             <% @stock.each do |stock| %>
             <div class="w-col w-col-4">
               <div class="w-inline-block journey-icon">
-              <%= link_to image_tag("airbnb.png",:class=>"img-block"), stock_path(stock) %>
+              <%= link_to image_tag(stock.avatar.url,:class=>"img-block"), stock_path(stock) %>
                     <div class="product-name"><%= stock.stockNumber %></div>
                     <div class="product-title"><%= stock.title %></div>
                     <div class="product-text"><%= stock.text %></div>

@@ -3,6 +3,11 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/README.rdoc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb.back" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/layouts/application.html.erb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/views/stocks/new.html.erb" charset="UTF-8" />
   </component>
 </project>

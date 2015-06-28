@@ -1,0 +1,857 @@
+/* line 1, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+div {
+  display: block;
+}
+
+/* line 7, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+html.modal-open.flexbox .modal-wrapper .modal-dialog {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/* line 11, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+html.modal-open .modal-wrapper .modal-dialog {
+  position: static;
+  margin-top: 14%;
+  margin-top: 14vh;
+}
+
+/* line 16, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.modal-dialog {
+  position: absolute;
+  z-index: 99;
+  margin: auto;
+  width: 420px;
+  max-width: 100%;
+  border-radius: 8px;
+  border: 1px solid #888;
+  box-shadow: 0 0 80px 0 rgba(0, 0, 0, 0.4);
+  background: #fff;
+  text-align: left;
+}
+
+/* line 28, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.modal-dialog, div[contentEditable] {
+  outline: 0;
+  -moz-outline: 0;
+}
+
+/* line 33, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+body.zhi {
+  padding-top: 46px;
+  _padding-top: 64px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* line 38, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+html body, html input, html textarea, html select, html button {
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+/* line 42, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+body, input, textarea, select, button {
+  line-height: 1.7;
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  color: #222;
+  word-wrap: break-word;
+}
+
+/* line 52, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.modal-dialog-title {
+  position: relative;
+  background-color: #75d175;
+  background-image: -moz-linear-gradient(top, #4cb64c, #2c9a2c);
+  background-image: -ms-linear-gradient(top, #4cb64c, #2c9a2c);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4cb64c), to(#2c9a2c));
+  background-image: -webkit-linear-gradient(top, #4cb64c, #2c9a2c);
+  background-image: -o-linear-gradient(top, #4cb64c, #2c9a2c);
+  background-image: linear-gradient(top, #4cb64c, #2c9a2c);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4CB64C', endColorstr='#2C9A2C', GradientType=0);
+  padding: 10px 15px;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid #0D6EB8;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset, 0 1px 1px rgba(0, 0, 0, 0.2);
+  margin: -1px -1px 0;
+  line-height: 14px;
+}
+
+/* line 71, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zg-editor-input {
+  width: 100%;
+  font-weight: 400;
+  min-height: 66px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 79, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zu-seamless-input-origin-element {
+  overflow: hidden;
+}
+
+/* line 83, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+textarea {
+  border: 0;
+  border: 0;
+  -moz-outline: 0;
+  outline: 0;
+  overflow: auto;
+  resize: none;
+  -webkit-appearance: none;
+}
+
+/* line 92, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+#zh-question-suggest-detail-container .zm-editable-editor-field-wrap {
+  overflow-y: auto;
+  max-height: 192px;
+}
+
+/* line 96, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zm-editable-editor-wrap.no-toolbar .zm-editable-editor-field-wrap {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* line 101, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zm-editable-editor-field-wrap {
+  position: relative;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1) inset;
+  -webkit-transition: min-height .25s ease-out;
+  background: #fff;
+}
+
+/* line 111, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+div[contentEditable], input, textarea, button, a:link {
+  -webkit-tap-highlight-color: rgba(225, 225, 225, 0.5);
+}
+
+/* line 115, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zg-form-text-input {
+  padding: 8px 10px;
+  font-size: 13px;
+  line-height: 15px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 3px;
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #222;
+}
+
+/* line 126, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+textarea.zg-form-text-input, .zg-form-text-input > textarea {
+  color: #222;
+  overflow: hidden;
+  min-height: 66px;
+  line-height: 22px;
+  font-size: 13px;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 none;
+}
+
+/* line 137, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.tr-image {
+  background-position: -80px -127px;
+}
+
+/* line 140, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.tr-inline-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+/* line 145, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zh-add-question-form {
+  padding: 2px 2px 0;
+}
+
+/* line 149, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zh-add-question-form .add-question-title-form textarea {
+  vertical-align: bottom;
+  height: 22px;
+}
+
+/* line 154, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.zh-add-question-form .add-question-section-title {
+  margin-bottom: 5px;
+}
+
+/* line 157, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.icon, .tr-icon, .tr-inline-icon, .goog-option-selected .goog-menuitem-checkbox, .zu-edit-button-icon, .zu-top-live-icon, .zh-global-backtotop, .zh-hovercard-arrow, .modal-dialog-title-close, .icon-external, .zg-icon, .zm-profile-icon, .zm-profile-header-icon, .icon-info, .icon-green-check, .icon-big-arrow-left, .icon-big-arrow-right, .icon-weibo, .icon-qzone, .icon-weibo-corner, .icon-big-white-sina, .icon-big-white-qq, .icon-big-white-mail, .icon-sign-arrow {
+  width: 16px;
+  height: 16px;
+  background-image: url(sprites-1.9.2.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 166, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.sign-button {
+  display: block;
+  padding: 0;
+  width: 180px;
+  font-size: 15px;
+  line-height: 33px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: #75d175;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4cb64c), to(#2c9a2c));
+  border: 1px solid #75d175;
+  border-radius: 5px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3), 0 1px 1px rgba(50, 50, 50, 0.05);
+  outline: 0;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 185, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.modal-dialog-title-text {
+  color: #fff;
+}
+
+/* line 189, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stocks.css.scss */
+.top {
+  color: #fff;
+  background: #0078d8;
+  box-shadow: inset 0 -1px 6px rgba(0, 0, 0, 0.1);
+}
+/* line 1, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+body {
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 7, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h1 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #66727d;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 500;
+}
+
+/* line 16, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+/* line 24, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* line 32, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+/* line 40, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+/* line 48, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+/* line 57, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+p {
+  margin-bottom: 5px;
+}
+
+/* line 61, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.button {
+  display: inline-block;
+  padding: 4px 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 70, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.logo-block {
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 12px;
+  font-family: Proximanova, sans-serif;
+  color: #c0fac0;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 82, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.mailing-section {
+  margin-top: 0px;
+  background-color: #3d4b57;
+}
+
+/* line 87, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.sub-head {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* line 96, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.twitter-follow {
+  position: static;
+  left: 45px;
+  display: block;
+  overflow-x: visible;
+  overflow-y: visible;
+  margin-top: 7px;
+  margin-right: 0px;
+  margin-left: 0px;
+  float: right;
+}
+
+/* line 108, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.highlight-text {
+  color: #59adeb;
+}
+
+/* line 112, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.email-label {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  float: none;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* line 125, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.form-label {
+  display: inline-block;
+  width: 32%;
+  margin-top: 3px;
+  margin-bottom: 0px;
+  margin-left: 26px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: none;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 140, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.subscribe-btn {
+  margin-top: 0px;
+  margin-bottom: 7px;
+  margin-left: 23px;
+  padding: 8px 16px;
+  border-radius: 2px;
+  background-color: #75d175;
+  box-shadow: #579c57 0px 3px 0px 0px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* line 154, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.subscribe-btn:hover {
+  background-color: #303e47;
+  box-shadow: #0c1012 0px 3px 0px 0px;
+}
+
+/* line 159, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.form-wrap {
+  margin-top: 18px;
+  margin-left: 0px;
+  padding-right: 82px;
+  padding-left: 82px;
+  text-align: center;
+}
+
+/* line 167, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.form {
+  text-align: center;
+}
+
+/* line 171, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.thanks-background {
+  margin-top: 0px;
+  padding-top: 10px;
+  border-radius: 2px;
+  background-color: #73f09f;
+  color: #33824e;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 181, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  float: left;
+  border-radius: 2px;
+}
+
+/* line 189, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.destination-text {
+  display: inline-block;
+  margin-top: 16px;
+  margin-left: 15px;
+  float: left;
+  color: #53585c;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* line 199, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-text {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 15px;
+  float: left;
+  color: #abb0b3;
+  font-size: 13px;
+}
+
+/* line 208, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.between-text {
+  display: inline-block;
+  margin-top: 14px;
+  color: #959b9e;
+  text-align: center;
+}
+
+/* line 215, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.bold {
+  font-weight: 600;
+}
+
+/* line 219, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-text-normal {
+  display: inline-block;
+  margin-top: 25px;
+  color: #8699a3;
+  text-align: center;
+}
+
+/* line 226, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-text-normal.middle {
+  display: block;
+}
+
+/* line 230, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-row {
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+/* line 235, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-row:hover {
+  border-radius: 2px;
+  background-color: #e8f6ff;
+  color: #333;
+  font-weight: 500;
+}
+
+/* line 242, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.table-title {
+  color: #4d575e;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* line 248, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.column {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* line 253, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.header-row {
+  margin-top: 22px;
+  margin-bottom: 20px;
+}
+
+/* line 258, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-content {
+  display: inline;
+  margin-left: 0px;
+}
+
+/* line 263, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-button {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  margin-left: 18px;
+  border-radius: 200px;
+}
+
+/* line 270, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-button.w--current {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 3px solid #e85a5a;
+  border-radius: 200px;
+  background-color: #e85a5a;
+  color: white;
+  font-weight: 500;
+}
+
+/* line 283, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-button.not-selected {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border: 3px solid #cdd1d4;
+  background-color: transparent;
+  color: #b6bdc2;
+  font-weight: 500;
+}
+
+/* line 295, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-button.not-selected:hover {
+  border-color: #e85a5a;
+  background-color: #e85a5a;
+  color: white;
+}
+
+/* line 301, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.tab-menu {
+  text-align: center;
+}
+
+/* line 305, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.link-block {
+  display: block;
+  margin-left: 0px;
+}
+
+/* line 310, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.product-icon-div {
+  display: block;
+  width: 280px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  border: 1px solid #d3e4e8;
+  border-radius: 2px;
+  background-color: white;
+  color: #4a4a4a;
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* line 325, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.img-block {
+  display: inline-block;
+  width: 280px;
+  height: 150px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 0px;
+}
+
+/* line 335, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.text-block {
+  margin-top: 15px;
+  padding-right: 17px;
+  padding-left: 17px;
+  color: #445057;
+  font-size: 17px;
+  line-height: 21px;
+  font-weight: 200;
+  text-align: center;
+}
+
+/* line 346, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.lower-product-block {
+  margin-top: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background-color: #f5f9fa;
+  color: #a8b7bd;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* line 358, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.column-row {
+  margin-bottom: 55px;
+}
+
+/* line 362, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.footer {
+  border-top: 1px solid #d8e1e6;
+}
+
+/* line 366, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.product-journey-div {
+  width: 700px;
+  height: 170px;
+  margin-right: 120px;
+  margin-bottom: 31px;
+  margin-left: 120px;
+  padding-right: 0px;
+  padding-left: 0px;
+  border-radius: 3px;
+  background-color: #e6dada;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.34), rgba(15, 15, 15, 0.09)), url("../images/2048.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.34), rgba(15, 15, 15, 0.09)), url("../images/2048.jpg");
+  background-position: 0% 0%, 0% -71%;
+  background-size: auto, 1024px;
+  background-attachment: scroll, scroll;
+}
+
+/* line 383, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.image-div {
+  width: 700px;
+  height: 150px;
+  border-radius: 3px;
+  background-image: url("../images/2048.jpg"), -webkit-linear-gradient(black, white);
+  background-image: url("../images/2048.jpg"), linear-gradient(black, white);
+}
+
+/* line 391, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.text {
+  position: relative;
+  left: 31px;
+  top: 20px;
+  display: inline-block;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/* line 401, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.journey-icon {
+  display: block;
+  width: 290px;
+  margin-bottom: 80px;
+  padding-right: 0px;
+  padding-bottom: 20px;
+  padding-left: 0px;
+  border: 1px solid #ced9db;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+/* line 413, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.product-name {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 0px;
+  color: #2ba6d6;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* line 424, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.product-title {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-left: 0px;
+  color: #2ba6d6;
+  text-decoration: none;
+}
+
+/* line 434, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.products-section {
+  margin-bottom: 80px;
+  padding-top: 50px;
+}
+
+/* line 439, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.product-text {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 0px;
+  border-bottom: 1px none #cff2ff;
+  color: #8c9da3;
+  font-size: 13px;
+}
+
+/* line 449, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.stats-text {
+  display: block;
+  color: #404f61;
+  font-weight: 500;
+}
+
+/* line 455, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.stats-div {
+  margin-top: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* line 461, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.status-div {
+  display: inline-block;
+  width: 60px;
+  height: 8px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  padding: 0px;
+  border-radius: 200px;
+  background-color: #47e652;
+}
+
+/* line 472, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.status-div.amber {
+  background-color: #f7a16f;
+}
+
+/* line 476, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.stats-name {
+  display: block;
+  margin-top: -2px;
+  margin-bottom: 0px;
+  color: #8c9da3;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* line 485, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.subtext {
+  display: block;
+  color: #9babb0;
+  font-weight: 400;
+}
+
+/* line 491, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.text-header-div {
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* line 496, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.head-sect {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-top: 6px solid #3d4b57;
+  background-color: #75d175;
+  background-image: -webkit-linear-gradient(top, #4cb64c, #2c9a2c);
+}
+
+/* line 513, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+}
+
+/* line 519, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-container:before, .w-container:after {
+  content: " ";
+  display: table;
+}
+
+/* line 524, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-container .w-row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+/* line 529, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-row:after {
+  clear: both;
+}
+
+/* line 533, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-row:before, .w-row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 538, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-col {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* line 547, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+.w-col-4 {
+  width: 33.33333333%;
+}
+
+/* line 551, D:/NAR8_3G/git/stockshare_rails/app/assets/stylesheets/stockview.css.scss */
+* {
+  box-sizing: border-box;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+

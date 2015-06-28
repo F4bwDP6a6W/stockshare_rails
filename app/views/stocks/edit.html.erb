@@ -2,4 +2,8 @@
 
 <%= render 'form' %>
 
+<%= link_to 'Destroy', stock_path(@stock),
+            method: :delete,
+            data: { confirm: 'Are you sure?' } %>
+
 <%= link_to 'Back', stocks_path %>

@@ -1,23 +1,51 @@
-<p>
-  <strong>StockNumber:</strong>
-  <%= @stock.stockNumber %>
-</p>
+<div class="head-sect">
+  <div class="w-container">
+    <div class="sub-head">Discover new startups &amp;&nbsp;follow their journeys from inception to success</div>
+    <div class="logo-block">Follow, post feedback, view updates &amp;&nbsp;get early access to new &amp;&nbsp;incredible
+      startups
+    </div>
+  </div>
+</div>
+<div class="mailing-section">
+  <div class="w-container">
+    <div>
+      <div class="w-form form-wrap">
+        <form class="form" id="email-form" name="email-form" data-name="Email Form">
+          <input class="w-input form-label" id="email" type="email" placeholder="Enter your email address"
+                 name="email" data-name="Email" required="required">
+          <input class="sign-button" type="submit" value="Email me!" data-wait="Please wait...">
+          <%= link_to '发布', new_stock_path, {:class => 'sign-button'} %>
+        </form>
+        <div class="w-form-fail">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="products-section">
+  <div class="w-container">
+    <p>
+      <strong>StockNumber:</strong>
+      <%= @stock.stockNumber %>
+    </p>
+    <%= link_to image_tag(@stock.avatar.url, :class => "img-block"), stock_path(@stock) %>
+    <p>
+      <strong>Title:</strong>
+      <%= @stock.title %>
+    </p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @stock.title %>
-</p>
+    <p>
+      <strong>Text:</strong>
+      <%= @stock.text %>
+    </p>
 
-<p>
-  <strong>Text:</strong>
-  <%= @stock.text %>
-</p>
+    <h2>Comments</h2>
+    <%= render @stock.comments %>
 
-<h2>Comments</h2>
-<%= render @stock.comments %>
+    <h2>Add a comment:</h2>
+    <%= render 'comments/form' %>
 
-<h2>Add a comment:</h2>
-<%= render 'comments/form' %>
-
-<%= link_to 'Edit', edit_stock_path(@stock) %> |
-<%= link_to 'Back', stocks_path %>
+    <%= link_to 'Edit', edit_stock_path(@stock) %> |
+    <%= link_to 'Back', stocks_path %>
+  </div>
+</div>

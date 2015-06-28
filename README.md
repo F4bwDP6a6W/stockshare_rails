@@ -33,6 +33,7 @@ Production环境执行我的是在DigitalOcean上面，Nginx + Unicorn  + Rails�
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+install http://www.imagemagick.org/script/binary-releases.php
 
 * ...
 

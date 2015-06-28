@@ -1,7 +1,5 @@
 class StocksController < ApplicationController
 
-  http_basic_authenticate_with name: "n2zhang", password: "Nokia127", except: [:index, :show]
-
   def index
     @stock = Stock.all
   end
@@ -15,6 +13,7 @@ class StocksController < ApplicationController
   end
 
   def edit
+
     @stock = Stock.find(params[:id])
   end
 
@@ -46,6 +45,6 @@ class StocksController < ApplicationController
 
   private
     def stock_params
-      params.require(:stock).permit(:stockNumber,:title, :text)
+      params.require(:stock).permit(:stockNumber,:title, :text,:avatar)
     end
 end
