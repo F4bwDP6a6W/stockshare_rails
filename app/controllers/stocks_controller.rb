@@ -18,7 +18,9 @@ class StocksController < ApplicationController
   end
 
   def create
-    @stock = Stock.new(stock_params)
+
+    @stock = current_user.stocks.new(stock_params)
+
     if @stock.save
       redirect_to @stock
     else
@@ -45,6 +47,6 @@ class StocksController < ApplicationController
 
   private
     def stock_params
-      params.require(:stock).permit(:stockNumber,:title, :text,:avatar)
+      params.require(:stock).permit(:stockNumber,:title,:size,:inventory,:color,:text,:avatar)
     end
 end

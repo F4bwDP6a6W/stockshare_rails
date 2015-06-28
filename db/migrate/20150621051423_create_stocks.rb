@@ -3,9 +3,9 @@ class CreateStocks < ActiveRecord::Migration
     create_table :stocks do |t|
       t.string :stockNumber
       t.string :title
-      t.string ; size
-      t.integer:inventory
-      t.string:color
+      t.string :size
+      t.integer :inventory
+      t.string :color
       t.references :user, index: true, foreign_key: true
       t.text :text
       t.timestamps

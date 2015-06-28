@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150627090720) do
+ActiveRecord::Schema.define(version: 20150628090720) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "commenter"
@@ -23,12 +23,13 @@ ActiveRecord::Schema.define(version: 20150627090720) do
 
   add_index "comments", ["stock_id"], name: "index_comments_on_stock_id"
 
-# Could not dump table "sqlite_stat1" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
-
   create_table "stocks", force: :cascade do |t|
-    t.string   "stockNumber",         limit: 255
-    t.string   "title",               limit: 255
+    t.string   "stockNumber"
+    t.string   "title"
+    t.string   "size"
+    t.integer  "inventory"
+    t.string   "color"
+    t.integer  "user_id"
     t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -37,6 +38,9 @@ ActiveRecord::Schema.define(version: 20150627090720) do
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
   end
+
+  add_index "stocks", ["user_id", "created_at"], name: "index_stocks_on_user_id_and_created_at"
+  add_index "stocks", ["user_id"], name: "index_stocks_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -58,6 +62,10 @@ ActiveRecord::Schema.define(version: 20150627090720) do
     t.string   "area"
     t.string   "idcardimg"
     t.string   "role"
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

@@ -12,33 +12,39 @@
               </div>
             </div>
           </div>
-          <div class="zg-section-big clearfix">
-            <div style="position:relative;margin-top:18px;">
-              <%= f.label :title %><br>
-              <%= f.text_field :title %>
+          <div style="position:relative;margin-top:18px;">
+            <%= f.label :title %><br>
+            <%= f.text_field :title %>
+          </div>
+          <div style="position:relative;margin-top:18px;">
+            <%= f.label :size %><br>
+            <%= f.text_field :size %>
+          </div>
+          <div style="position:relative;margin-top:18px;">
+            <%= f.label :inventory %><br>
+            <%= f.text_field :inventory %>
+          </div>
+          <div style="position:relative;margin-top:18px;">
+            <%= f.label :color %><br>
+            <%= f.text_field :color %>
+          </div>
+          <div style="position:relative;margin-top:18px;">
+            <%= f.file_field :avatar %>
+          </div>
+          <div style="position:relative;margin-top:18px;">
+            <div class="zm-editable-editor-field-wrap">
+              <%= f.label :text %>
+              <%= f.text_area :text %>
             </div>
           </div>
-          <div class="zg-section-big">
-            <div style="position:relative;margin-top:18px;">
-                <%= f.file_field :avatar %>
-            </div>
-
-            <div class="zg-section-big">
-              <div style="position:relative;margin-top:18px;">
-                <div class="zm-editable-editor-field-wrap">
-                  <%= f.label :text %>
-                  <%= f.text_area :text %>
-                </div>
-              </div>
-              <div style="position:relative;margin-top:18px;">
-                <%= link_to 'Back', stocks_path %>
-                <%= f.submit %></div>
-            </div>
+          <div style="position:relative;margin-top:18px;">
+            <%= link_to 'Back', stocks_path %>
+            <%= f.submit %></div>
+          </div>
           </div>
           </div>
       <% end %>
       </div>
-</div>
-<div class="modal-dialog-buttons" style="display: none;"></div>
-</div>
-</div>
+      </div>
+      </div>
+      </div>
