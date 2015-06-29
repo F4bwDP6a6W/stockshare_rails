@@ -1,4 +1,5 @@
 class StocksController < ApplicationController
+  # load_and_authorize_resource :through => :stock
 
   def index
     @stock = Stock.all

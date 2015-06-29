@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :user
+  # , :controllers => { :registrations => "users/registrations" }
   get 'stockview/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
