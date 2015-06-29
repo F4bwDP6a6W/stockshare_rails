@@ -1,5 +1,4 @@
 class CommentsController < ApplicationController
-  http_basic_authenticate_with name: "n2zhang", password: "Nokia127", only: :destroy
 
   def create
     @stock = Stock.find(params[:stock_id])
