@@ -41,4 +41,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'devise'
 gem "paperclip", "~> 4.2"
-gem "cancan"
+gem 'cancancan', '~> 1.10'

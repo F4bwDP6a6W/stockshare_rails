@@ -16,6 +16,11 @@ Bundle install 设置代理在执行前先:
  
  > Mac:`EXPORT http_proxy=http://10.10.10.10:8080`
 
+理解CanCan:http://blog.xdite.net/posts/2012/07/30/cancan-rule-engine-authorization-based-library-1/
+写的很好，迷茫了一天的看看算清楚了。
+
+另外CanCan不支持rails4了，使用CanCanCan解决。
+
 * Ruby version
  > 我用的是Rails 4.2.1
 

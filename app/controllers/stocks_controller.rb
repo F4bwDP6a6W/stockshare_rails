@@ -1,5 +1,5 @@
 class StocksController < ApplicationController
-  # load_and_authorize_resource :through => :stock
+  load_and_authorize_resource
 
   def index
     @stock = Stock.all
@@ -47,7 +47,7 @@ class StocksController < ApplicationController
   end
 
   private
-    def stock_params
+      def stock_params
       params.require(:stock).permit(:stockNumber,:title,:size,:inventory,:color,:text,:avatar)
     end
 end
