@@ -3,6 +3,7 @@ class CreateStocks < ActiveRecord::Migration
     create_table :stocks do |t|
       t.string :stockNumber
       t.string :title
+      t.string :price
       t.string :size
       t.integer :inventory
       t.string :color

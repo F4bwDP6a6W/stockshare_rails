@@ -1,50 +1,26 @@
-<div class="modal-wrapper" aria-hidden="true">
-  <div class="modal-dialog absolute-position" tabindex="0" role="dialog" aria-labelledby=":2i" style="width: 550px;">
-    <div class="modal-dialog-title"><span class="modal-dialog-title-text" id=":2i" role="heading">提问</span></div>
-    <div class="modal-dialog-content">
-      <%= form_for :stock, :url => stocks_path, :html => {:multipart => true} do |f| %>
-          <div class="zh-add-question-form">
-            <div class="before-ask-form"><b>提问前请先搜索</b>
-
-              <div style="position:relative;margin-top:18px;">
-                <%= f.label :stockNumber %><br>
-                <%= f.text_field :stockNumber %>
-              </div>
-            </div>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <%= f.label :title %><br>
+<div class="content">
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+      <%= form_for :stock, :url => stocks_path, :html => {:multipart => true, :class => "pure-form pure-form-stacked"} do |f| %>
+          <fieldset>
+            <%= f.label :stockNumber %>
+            <%= f.text_field :stockNumber %>
+            <%= f.label :title %>
             <%= f.text_field :title %>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <%= f.label :size %><br>
+            <%= f.label :size %>
             <%= f.text_field :size %>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <%= f.label :inventory %><br>
+            <%= f.label :inventory %>
             <%= f.text_field :inventory %>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <%= f.label :color %><br>
+            <%= f.label :color %>
             <%= f.text_field :color %>
-          </div>
-          <div style="position:relative;margin-top:18px;">
             <%= f.file_field :avatar %>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <div class="zm-editable-editor-field-wrap">
-              <%= f.label :text %>
-              <%= f.text_area :text %>
-            </div>
-          </div>
-          <div style="position:relative;margin-top:18px;">
-            <%= link_to 'Back', stocks_path %>
-            <%= f.submit %></div>
-          </div>
-          </div>
-          </div>
+            <%= f.label :text %>
+            <%= f.text_area :text %>
+          <%= f.submit :class => "pure-button" %></div>
+          </fieldset>
       <% end %>
+
       </div>
-      </div>
-      </div>
-      </div>
+  <%= link_to 'Back', stocks_path, :class => "pure-menu-link" %>
+</div>
+</div>

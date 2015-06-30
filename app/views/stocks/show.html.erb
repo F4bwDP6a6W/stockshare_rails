@@ -1,64 +1,23 @@
-<div class="head-sect">
-  <div class="w-container">
-    <div class="sub-head">Discover new startups &amp;&nbsp;follow their journeys from inception to success</div>
-    <div class="logo-block">Follow, post feedback, view updates &amp;&nbsp;get early access to new &amp;&nbsp;incredible
-      startups
+<div class="content">
+  <div class="pure-g">
+    <div class="pure-u-1-2">
+   <ul>
+     <li><%= @stock.stockNumber %></li>
+    <li><%= @stock.title %></li>
+      <li><%= @stock.size %></li>
+     <li><%= @stock.inventory %></li>
+     <li><%= @stock.color %></li>
+     <li><%= @stock.text %></li>
+   </ul>
+    </div>
+    <div class="pure-u-1-2">
+      <%= link_to image_tag(@stock.avatar.url, :class => "pure-img"), stock_path(@stock) %>
     </div>
   </div>
-</div>
-<div class="mailing-section">
-  <div class="w-container">
-    <div>
-      <div class="w-form form-wrap">
-        <form class="form" id="email-form" name="email-form" data-name="Email Form">
-          <input class="w-input form-label" id="email" type="email" placeholder="Enter your email address"
-                 name="email" data-name="Email" required="required">
-          <input class="sign-button" type="submit" value="Email me!" data-wait="Please wait...">
-          <%= link_to '发布', new_stock_path, {:class => 'sign-button'} %>
-        </form>
-        <div class="w-form-fail">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="products-section">
-  <div class="w-container">
-    <p>
-      <strong>StockNumber:</strong>
-      <%= @stock.stockNumber %>
-    </p>
-    <%= link_to image_tag(@stock.avatar.url, :class => "img-block"), stock_path(@stock) %>
-    <p>
-      <strong>Title:</strong>
-      <%= @stock.title %>
-    </p>
-    <p>
-      <strong>size:</strong>
-      <%= @stock.size %>
-    </p>
-    <p>
-      <strong>inventory:</strong>
-      <%= @stock.inventory %>
-    </p>
-    <p>
-      <strong>color:</strong>
-      <%= @stock.color %>
-    </p>
-    <p>
-      <strong>Text:</strong>
-      <%= @stock.text %>
-    </p>
+  <%= link_to 'Edit', edit_stock_path(@stock),:class=>"pure-menu-link" %>
 
-    <h2>Comments</h2>
-    <%= render @stock.comments %>
+  <%= render @stock.comments %>
+  <%= render 'comments/form' %>
 
-    <h2>Add a comment:</h2>
-    <%= render 'comments/form' %>
-
-
-    <%= link_to 'Edit', edit_stock_path(@stock) %> |
-
-    <%= link_to 'Back', stocks_path %>
-  </div>
+  <%= link_to 'Back', stocks_path ,:class=>"pure-menu-link"%>
 </div>

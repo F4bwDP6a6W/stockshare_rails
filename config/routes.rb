@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :user
   # , :controllers => { :registrations => "users/registrations" }
-  get 'stockview/index'
+  get 'stocks/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
    resources :stocks do
      resources :comments
    end
-   root 'stockview#index'
+   root 'stocks#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

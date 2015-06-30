@@ -1,15 +1,19 @@
-<p>
+<ul class="pricing-table-list">
+  <li>
   <strong>Commenter:</strong>
+  </li>
+  <li>
   <%= comment.commenter %>
-</p>
-
-<p>
+  </li>
+  <li>
   <strong>Comment:</strong>
+  </li>
+  <li>
   <%= comment.body %>
-</p>
+  </li>
+</ul>
 
-<p>
+
   <%= link_to 'Destroy Comment', [comment.stock, comment],
               method: :delete,
               data: { confirm: 'Are you sure?' } %>
-</p>

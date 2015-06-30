@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20150629051425) do
   create_table "stocks", force: :cascade do |t|
     t.string   "stockNumber"
     t.string   "title"
+    t.string   "price"
     t.string   "size"
     t.integer  "inventory"
     t.string   "color"

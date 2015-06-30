@@ -7,29 +7,38 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<div class ="top">
-<div class="view view-signin" style="display: block;">
-    <div class="title">
-      <% if user_signed_in? %>
-          Logged in as <strong><%= current_user.email %></strong>.
-          <%= link_to '修改资料', edit_user_registration_path, :class => 'navbar-link' %> |
-          <%= link_to "注销", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-      <% else %>
-          <%= link_to "注册", new_user_registration_path, :class => 'navbar-link'  %> |
-          <%= link_to "登录", new_user_session_path, :class => 'navbar-link'  %>
-      <% end %>
-    </div>
-    <div class="email input-wrapper">
-      <% if notice %>
-          <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-      <% if alert %>
-          <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
-    </div>
-    <div class="input-wrapper">
-      <%= yield %>
-    </div>
+<div class="pure-menu pure-menu-horizontal">
+  <ul class="pure-menu-list">
+    <%= link_to '易货', stocks_path,:class=>"pure-menu-heading" %>
+    <% if user_signed_in? %>
+        <li class="pure-menu-item">
+          <%= current_user.email %>
+        </li>
+        <li class="pure-menu-item">
+          <%= link_to '修改资料', edit_user_registration_path, :class => 'pure-menu-link' %>
+        </li>
+        <li class="pure-menu-item">
+          <%= link_to "注销", destroy_user_session_path, method: :delete, :class => 'pure-menu-link' %>
+        </li>
+    <% else %>
+        <li class="pure-menu-item">
+          <%= link_to "注册", new_user_registration_path, :class => 'pure-menu-link' %>
+        </li>
+        <li class="pure-menu-item">
+          <%= link_to "登录", new_user_session_path, :class => 'pure-menu-link' %>
+        </li>
+    <% end %>
+  </ul>
 </div>
+<div class="pure-menu pure-menu-horizontal">
+  <% if notice %>
+      <p class="pure-menu-item"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+      <p class="pure-menu-item"><%= alert %></p>
+  <% end %>
+</div>
+<div class="">
+  <%= yield %>
 </div>
 </body>

@@ -1,69 +1,28 @@
-<div class="head-sect">
-    <div class="w-container">
-        <div class="sub-head">Discover new startups &amp;&nbsp;follow their journeys from inception to success</div>
-        <div class="logo-block">Follow, post feedback, view updates &amp;&nbsp;get early access to new &amp;&nbsp;incredible
-            startups
-        </div>
-    </div>
+<div class="banner">
+  <div class="banner-menu">
+    <form class="pure-form">
+      <input  id="email" type="email" placeholder="Enter your email address"
+             name="email" data-name="Email" required="required">
+      <input type="submit" value="Email me!" data-wait="Please wait...">
+      <%= link_to '发布', new_stock_path, {:class => 'pure-menu-link'} %>
+    </form>
+  </div>
 </div>
-<div class="mailing-section">
-    <div class="w-container">
-        <div>
-            <div class="w-form form-wrap">
-                <form class="form" id="email-form" name="email-form" data-name="Email Form">
-                    <input class="w-input form-label" id="email" type="email" placeholder="Enter your email address"
-                           name="email" data-name="Email" required="required">
-                    <input class="sign-button" type="submit" value="Email me!" data-wait="Please wait...">
-                    <%= link_to '发布', new_stock_path , {:class => 'sign-button'} %>
-                </form>
-                <div class="w-form-fail">
-                </div>
-            </div>
+<div class="l-content">
+  <div class="pricing-tables pure-g">
+
+    <% @stock.each do |stock| %>
+        <div class="pure-u-1-4">
+          <div class="pricing-table pricing-table-free">
+            <%= link_to image_tag(stock.avatar.url, :class => "pure-img"), stock_path(stock) %>
+            <div class="pricing-table-header"><%= stock.stockNumber %></div>
+            <ul class="pricing-table-list">
+              <li><%= stock.title %></li>
+              <li><%= stock.size %></li>
+              <li><%= stock.inventory %></li>
+            </ul>
+          </div>
         </div>
-    </div>
+    <% end %>
+  </div>
 </div>
-<div class="products-section">
-    <div class="w-container">
-        <div class="text-header-div">
-            <h1>Featured Journeys</h1>
-            <div class="subtext">Here are a list of our most active startup journeys right now!</div>
-        </div>
-        <div class="w-row">
-            <% @stock.each do |stock| %>
-            <div class="w-col w-col-4">
-              <div class="w-inline-block journey-icon">
-              <%= link_to image_tag(stock.avatar.url,:class=>"img-block"), stock_path(stock) %>
-                    <div class="product-name"><%= stock.stockNumber %></div>
-                    <div class="product-title"><%= stock.title %></div>
-                    <div class="product-text"><%= stock.text %></div>
-                    <div class="stats-div">
-                        <div class="w-row">
-                            <div class="w-col w-col-4">
-                                <div class="stats-text">168</div>
-                            </div>
-                            <div class="w-col w-col-4">
-                                <div class="stats-text">24</div>
-                            </div>
-                            <div class="w-col w-col-4">
-                                <div class="status-div"></div>
-                            </div>
-                        </div>
-                        <div class="w-row">
-                            <div class="w-col w-col-4">
-                                <div class="stats-name">followers</div>
-                            </div>
-                            <div class="w-col w-col-4">
-                                <div class="stats-name">updates</div>
-                            </div>
-                            <div class="w-col w-col-4">
-                                <div class="stats-name">live</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <% end %>
-        </div>
-    </div>
-</div>
-<div class="footer"></div>

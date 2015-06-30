@@ -1,13 +1,9 @@
-<%= form_for([@stock, @stock.comments.build]) do |f| %>
-    <p>
-      <%= f.label :commenter %><br>
+<%= form_for([@stock, @stock.comments.build], :class=>"pure-form pure-form-stacked") do |f| %>
+    <fieldset>
+      <%= f.label :commenter %>
       <%= f.text_field :commenter %>
-    </p>
-    <p>
-      <%= f.label :body %><br>
+      <%= f.label :body %>
       <%= f.text_area :body %>
-    </p>
-    <p>
       <%= f.submit %>
-    </p>
+    </fieldset>
 <% end %>
